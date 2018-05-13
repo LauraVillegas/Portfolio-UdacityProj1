@@ -1,0 +1,408 @@
+body, html, main {
+    margin: 0;
+    padding: 0;
+    max-width: 100vw;
+    font-family: 'EB Garamond', serif;
+    background-color:#562B39;
+    justify-content: center;
+  }
+
+  header {
+      padding-top: 15px;
+      height: 20%;
+     justify-content: center;
+  }
+
+  strong {
+      font-weight: bolder;
+  }
+
+ .container {
+     width: 100%;
+     display: flex;
+     flex-wrap: wrap;
+ } 
+
+  .title {
+      width: 50%;
+      color: white;
+ }
+ 
+ .logo {
+     width: 120px;
+     height: 120px;
+ }
+
+ hr {
+     color: white;
+     width: 75%;
+     height: opx;;
+ }
+ 
+ #hero {
+     max-width: 100%;
+     width: 100vmax;
+     height: 40vmax;
+     background-size: cover;
+     margin-top: 10px;
+     margin-bottom: 10px;
+ }
+
+ .title2 {
+     width: 100%;
+     text-align: center;
+     color: aliceblue;
+     font-size: 2em;
+ }
+
+ .box {
+     width: 30%;
+     height: 25vmax;
+ }
+
+ #img1 {
+    background: url(../img/JgCarpentry.jpeg);
+    background-size: cover;
+ }
+
+#img2 {
+    background-image: url(../img/HackersCrib.jpeg);
+    background-size: cover;
+ }
+
+#img3 {
+    background-image: url(../img/Twenty23.jpeg);
+    background-size: cover;
+ }
+
+.preview {
+    width: 100%;
+    order: -1;
+    height: 25vh;  
+ }
+
+#social {
+    list-style-type: none;
+    -webkit-padding-start: 0px;
+ }
+
+li {
+    display: inline;
+    padding: 10px;
+ }
+
+i {
+    color: white;
+ }
+
+footer {
+    background-color: #471928;
+    width: 100%;
+    justify-content: center;
+ }
+
+a {
+    color: white;
+    text-decoration: none;
+ }
+
+/*Mobile device*/
+ @media screen and (max-width:480px){
+
+    .title {
+        width: 100%;
+        color: white;
+        text-align: center;
+        justify-content: center;
+        order: 0;
+    }
+        
+   .logo {
+       width: 60px;
+       height: 60px;
+       order: 1;
+    }
+
+    .title2 {
+        order: 0;
+        width: 100%;
+    }
+
+   .box {
+        width: 100%;
+        height: 60vh;
+        margin: 10px;
+        background-color: #471928;
+        border-radius: 15px;
+    } 
+
+    .box1 {
+        order: 1;
+    }
+
+    .box2 {
+        order: 2;
+    }
+
+    .box3 {
+        order: 3;
+    }
+
+    .title3 {
+        padding: 0;
+        margin: 0;
+    }
+
+    .info {
+        font-size: 0.2em;
+    }
+
+   #description {
+       width: 100%;
+       text-align: center;
+       margin: 10px;
+       order: 1;
+       color: white;
+       margin-top: 0;
+    }
+
+   .preview {
+       width: 100%;
+       order: -1;
+       height: 50%;  
+       margin: 20px;
+       border-radius: 5px;
+    }
+ }
+
+ /*Landscape phone*/
+@media screen and (min-width:481px) and (max-width:767px){
+
+    .title {
+        text-align: right;
+    }
+
+    .box {
+       width: 100%;
+       height: 60vh;
+       margin: 20px;
+       background-color: #471928;
+       border-radius: 5px;
+       text-overflow: ellipsis;
+       flex-flow: nowrap;  
+    }    
+      
+    .box1 {
+        order: 1;
+    }
+
+    .box2 {
+        order: 2;
+    }
+
+    .box3 {
+        order: 3;
+    }
+
+    #hero {
+        height: 60vmax;;
+    }
+
+    #description {
+        width: 32vw;
+        text-align: left;
+        order: 1;
+        color: white;
+        margin-top: 20px;;
+        max-height: 25vh;
+        padding-bottom: 15px;
+        margin-left: 15px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .preview {
+        width: 50vw;
+        height: 60vh;
+        order: -1;
+        border-radius: 5px 0px 0px 5px;
+    }
+
+    .info {
+        font-size: 0.5em;
+        vertical-align: middle;
+    }
+
+    .title3 {
+        padding: 0;
+        margin-top: 5px;
+        width: 100%;
+    }
+
+}
+
+/*Tablets*/
+@media screen and (min-width:768px) and (max-width:1024px){
+    #hero {
+        height: 75vh;
+    }
+
+    .title {
+        text-align: right;
+    }
+
+    .box {
+        width: 100%;
+        height: 40vh;
+        margin: 20px;
+        background-color: #471928;
+        border-radius: 5px;
+        text-overflow: ellipsis;
+        flex-flow: nowrap; 
+    } 
+
+    .box1 {
+        order: 1;
+    }
+
+    .box2 {
+        order: 2;
+    }
+
+    .box3 {
+        order: 3;
+    }
+
+    #description {
+        width: 100%;
+        text-align: left;
+        margin: 10px;
+        order: 1;
+        color: white;
+        margin-top: 15px;
+        line-height: 35px;
+    }
+
+    .preview {
+        width: 100%;
+        order: -1;
+        height: 40vh;  
+        border-radius: 5px;
+    }
+
+    .info {
+        font-size: 1.0em;
+        flex-shrink: 2;
+        width: 100%;
+        vertical-align: middle;
+        font-size: 1em;
+        padding-top: 15%;
+    }
+
+    .title3 {
+        padding: 0;
+        margin-top: 5px;
+        width: 100%;
+    }
+
+}
+
+
+
+@media only screen and (min-width : 1024px) {
+    
+    .title {
+        text-align: right;
+    }
+
+    .box {
+        width: 30%;
+        height: 60vh;
+        margin: 10px;
+        background-color: #471928;
+        border-radius: 5px;
+        flex-wrap: wrap;
+    } 
+
+    .box1 {
+        order: 1;
+        margin-right: 10px;
+    }
+
+    .box2 {
+        order: 2;
+        margin-right: 10px;
+    }
+
+    .box3 {
+        order: 3;
+        margin-right: 10px;
+    }
+
+    #description {
+        width: 100%;
+        text-align: center;
+        order: 1;
+        color: white;
+        margin-top: 10px;;
+        max-height: 25vh;
+        padding-bottom: 10px;
+        margin-left: 10px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .preview {
+        width: 100%;
+        height: 35vh;
+        order: -1;   
+    }
+
+   .info {
+      width: 100%;
+      vertical-align: middle;
+      font-size: 0.5em;
+      margin-top: 0;
+      padding: 0;
+      line-height: 20px;
+   }
+
+   .title3 { 
+       font-size: 0.7em;
+       padding: 0;
+       margin-top: 2px;
+       width: 100%;
+   }
+
+     .projects {
+        max-width: 100vw;
+        justify-content: center;
+    }
+
+    footer {
+        margin-top: 20px;
+        height: 20vh;
+    }
+
+    .title2 {
+        padding: 10px;
+        font-size: 2em;
+    }
+
+    li {
+        padding: 20px;   
+    }
+
+    ul {
+        padding-top: 40px;
+    }
+  
+    #hero {
+        width: 75%;
+    }
+
+    .title3 {
+        font-size: 1.5em;
+    }
+
+}
